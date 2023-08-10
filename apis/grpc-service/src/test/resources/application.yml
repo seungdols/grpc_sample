@@ -1,0 +1,7 @@
+grpc:
+  port: 6565
+  enabled: false
+
+spring:
+  application:
+    name: grpc-server

@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  ssl:
+    enabled: true
+    key-store: classpath:cert/localhost.p12
+    key-store-type: PKCS12
+    key-store-password: changeit
+  http2:
+    enabled: true
+
+grpc:
+  port: 6565
+  security:
+    cert-chain: classpath:cert/localhost.pem
+    private-key: classpath:cert/localhost-key.pem
+
+spring:
+  application:
+    name: grpc-client
